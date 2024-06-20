@@ -11,7 +11,6 @@ Este proyecto es una aplicación Laravel configurada para utilizar una base de d
 
 ## Instalación
 
-
 1. **Actualizar los paquetes del sistema:**
    sudo apt update
 2. **Instalar PHP y las extensiones necesarias:**
@@ -29,7 +28,13 @@ Este proyecto es una aplicación Laravel configurada para utilizar una base de d
     GRANT ALL PRIVILEGES ON DATABASE productosvnzla TO victor;
     \q
     exit
-
+6. **Crea archivo .env:**
+    DB_CONNECTION=pgsql
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_DATABASE=productosvnzla
+    DB_USERNAME=victor
+    DB_PASSWORD=123456
 6. **Clave de APP**
     php artisan key:generate
 7. **Ejecuta migración**
